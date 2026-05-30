@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+
+  /* Visible focus ring only for keyboard users; pointer users keep clean UI */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
